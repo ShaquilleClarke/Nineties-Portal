@@ -67,6 +67,84 @@ Game.create(
   external_link_2: "https://youtu.be/uhPlK6yOT3g"
 )
 
+#1991
+
+Game.create(
+  title: "Sonic the Hedgehog", 
+  genre: "Adventure", 
+  description: "The game takes place on South Island and follows Sonic — an anthropomorphic blue hedgehog. The game’s antagonist, a brilliant but insane scientist Dr. Robotnik attempts to take possession of the power of six Chaos Emeralds by entrapping South Island’s animal inhabitants inside hostile robots. Sonic decides to hinder Robotnik’s plans by freeing animals and collecting the emeralds himself.", 
+  platform: "Sega Genesis", 
+  publisher: "Sega", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/b/ba/Sonic_the_Hedgehog_1_Genesis_box_art.jpg", 
+  release_year: 1991, 
+  external_link_1: "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=JqQYDLcvkBc"
+)
+Game.create(
+  title: "The Legend of Zelda: A Link to the Past", 
+  genre: "Adventure", 
+  description: "Return to an age of magic and heroes! When an evil magician named
+  Agahnim begins kidnapping young maidens in Hyrule in a quest to break
+  the imprisoning seal on Ganon, a young boy named Link is called upon to
+  stop him. ", 
+  platform: "NES", 
+  publisher: "Nintendo", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/2/21/The_Legend_of_Zelda_A_Link_to_the_Past_SNES_Game_Cover.jpg", 
+  release_year: 1991, 
+  external_link_1: "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past", 
+  external_link_2: "https://www.youtube.com/watch?v=Z6hjG6MCcZ8"
+)
+Game.create(
+  title: "Streets of Rage", 
+  genre: "Action/Arcade", 
+  description: "Looting, random violence and destruction are rampant. Nobody is safe. Despite repeated refusals by their superiors, three young police officers were determined to tackle the problem head on. Eventually they created a special attack unit the only way they could – they quit the force. Take control of one of the three ex-officers and make the city a place where people no longer have to walk the Streets of Rage!", 
+  platform: "Sega Genesis", 
+  publisher: "Sega", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/0/06/Streets_of_Rage_%28cover%29.jpg", 
+  release_year: 1991, 
+  external_link_1: "https://en.wikipedia.org/wiki/Streets_of_Rage_(video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=UrVMYd7MUzM"
+)
+Game.create(
+  title: "Street Fighter II: The World Warrior", 
+  genre: "Fighting/Arcade", 
+  description: "Street Fighter II is a fighting game. Players select from one of eight characters: Ryu, Ken, Blanka, E. Honda, Zangief, Chun Li, Guile and Dhalsim to do battle with. They must then use their combat strengths to defeat the other seven fighters followed by four boss characters: M. Bison, Vega, Sagat and Balrog. Each character represents a certain country and has his or her own reasons for wanting to win against the others.", 
+  platform: "Arcade", 
+  publisher: "Capcom", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/1/1d/SF2_JPN_flyer.jpg", 
+  release_year: 1991, 
+  external_link_1: "https://en.wikipedia.org/wiki/Street_Fighter_II:_The_World_Warrior", 
+  external_link_2: "https://www.youtube.com/watch?v=xI284D4y1q4"
+)
+Game.create(
+  title: "Metroid II - Return of Samus", 
+  genre: "Action/Adventure", 
+  description: "Bounty Hunter Samus Aran faces off against the Metroid scourge once again in this epic sequel to the NES  classic, Metroid.", 
+  platform: "Game Boy", 
+  publisher: "Nintendo", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/9/93/Metroid2_boxart.jpg", 
+  release_year: 1991, 
+  external_link_1: "https://en.wikipedia.org/wiki/Metroid_II:_Return_of_Samus", 
+  external_link_2: "https://www.youtube.com/watch?v=JaFG3LFHhlc"
+)
+Game.create(
+  title: "Super Castlevania IV", 
+  genre: "Adventure", 
+  description: "In the peaceful country of Transylvania, there is a legend of an evil
+  castle and its master, the Prince of Darkness, Dracula. Once every
+  hundred years, the powers of good mysteriously weaken, and evil attempts
+  to resurrect Dracula. It's up to the Belmont clan to take up the eternal
+  fight against the vampire. Players take on the role of Simon Belmont,
+  armed with the legendary whip, Vampire Killer, to defeat Dracula and his
+  evil minions.", 
+  platform: "SNES", 
+  publisher: "Konami", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/c/c2/Super_Castlevania_IV_North_American_SNES_box_art.png", 
+  release_year: 1991, 
+  external_link_1: "https://en.wikipedia.org/wiki/Super_Castlevania_IV", 
+  external_link_2: "https://www.youtube.com/watch?v=jd7P7niYimk"
+)
+
 # 1992
 
 Game.create(
@@ -134,6 +212,77 @@ Game.create(
   release_year: 1992,
   external_link_1: "https://en.wikipedia.org/wiki/Kirby%27s_Dream_Land",
   external_link_2: "https://youtu.be/giWzzjEgGIM"
+)
+
+#1993
+
+Game.create(
+  title: "Doom", 
+  genre: "Shooter", 
+  description: "In Doom, players assume the role of an unnamed space marine, who became popularly known as Doomguy, fighting his way through hordes of invading demons from Hell.", 
+  platform: "PC", 
+  publisher: "Id Software", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg", 
+  release_year: 1993, 
+  external_link_1: "https://en.wikipedia.org/wiki/Doom_(1993_video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=iFnOLFd_ByQ"
+)
+Game.create(
+  title: "Duke Nukem 2", 
+  genre: "Action", 
+  description: "In 1998, the evil Rigelatins plan to enslave Earth, and they kidnap Duke Nukem, to use his brain to plot the attack for their forces. Duke breaks free to save the world again.", 
+  platform: "PC", 
+  publisher: "Apogee Software", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/9/9e/Duke_Nukem_II_Cover.jpg", 
+  release_year: 1993, 
+  external_link_1: "https://en.wikipedia.org/wiki/Duke_Nukem_II", 
+  external_link_2: "https://www.youtube.com/watch?v=tofpXhxv64U"
+)
+Game.create(
+  title: "Super Mario Kart", 
+  genre: "Racing", 
+  description: "Select one of eight characters from the Mario series—offering a variety
+  of driving styles—and take on three championship cups in three different
+  kart classes.", 
+  platform: "SNES", 
+  publisher: "Nintendo", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/3/38/Supermariokart_box.JPG", 
+  release_year: 1993, 
+  external_link_1: "https://en.wikipedia.org/wiki/Super_Mario_Kart", 
+  external_link_2: "https://www.youtube.com/watch?v=AlAmXXNz5ac"
+)
+Game.create(
+  title: "Mortal Kombat 2", 
+  genre: "Fighting", 
+  description: "Following his failure to defeat Liu Kang in the previous Mortal Kombat tournament, the evil Shang Tsung seeks revenge.", 
+  platform: "Arcade", 
+  publisher: "Midway", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/5/5f/Mortal_Kombat_II_arcade.png", 
+  release_year: 1993, 
+  external_link_1: "https://en.wikipedia.org/wiki/Mortal_Kombat_II", 
+  external_link_2: "https://www.youtube.com/watch?v=Q-GnyLbmiTo"
+)
+Game.create(
+  title: "X-Men", 
+  genre: "Action", 
+  description: "A virus transmitted via satellite has infected the Danger Room, disabling control and safety limits. The X-Men must endure the unpredictable behavior of the Danger Room until the virus can be located and eliminated.", 
+  platform: "Sega Genesis", 
+  publisher: "Sega", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/0/01/X-Men_%281993_Sega_video_game_cover%29.jpg", 
+  release_year: 1993, 
+  external_link_1: "https://en.wikipedia.org/wiki/X-Men_(1993_video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=3jdSNMv3MkQ"
+)
+Game.create(
+  title: "Mega Man X", 
+  genre: "Action", 
+  description: "The plot of the game follows the protagonist Mega Man X, an android member of a military task force called the Maverick Hunters. With the help of his partner Zero, X must thwart the plans of Sigma, a powerful Maverick leader wishing to bring about human extinction.", 
+  platform: "SNES", 
+  publisher: "Capcom", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/f/f1/Mega_Man_X_Coverart.png", 
+  release_year: 1993, 
+  external_link_1: "https://en.wikipedia.org/wiki/Mega_Man_X", 
+  external_link_2: "https://www.youtube.com/watch?v=wd2NqblSmIY"
 )
 
 # 1994
@@ -205,6 +354,75 @@ Game.create(
   external_link_2: "https://youtu.be/CEFan85sWsQ"
 )
 
+#1995
+
+Game.create(
+  title: "Star Wars - Dark Forces", 
+  genre: "Shooter", 
+  description: "The main protagonist of the game is a mercenary Kyle Katarn, who works for Rebel Alliance. The story takes place when he discovers the Dark Trooper Project of Empire. One of its segments is the development of a series of powerful battle droids and armored stormtroopers.", 
+  platform: "PC/Mac", 
+  publisher: "Disney Interactive/LucasArts Entertainment", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/4/4f/Dark_Forces_box_cover.jpg", 
+  release_year: 1995, 
+  external_link_1: "https://en.wikipedia.org/wiki/Star_Wars:_Dark_Forces", 
+  external_link_2: "https://www.youtube.com/watch?v=Ua-d_E42C7c"
+)
+Game.create(
+  title: "Worms", 
+  genre: "Strategy", 
+  description: "Worms is a two-dimensional game. The gameplay is similar to the strategies of the time, such as Scorched Earth. The player controls a team of four worms. The objective of the game is to eliminate the enemy team.", 
+  platform: "Game Boy/Mac", 
+  publisher: "Ocean Software", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/d/d7/Worms-win-cover.jpg", 
+  release_year: 1995, 
+  external_link_1: "https://en.wikipedia.org/wiki/Worms_(1995_video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=E5o4ReqhcaY"
+)
+Game.create(
+  title: "Chrono Trigger", 
+  genre: "RPG", 
+  description: "The game's story follows a group of adventurers who travel through time to prevent a global catastrophe.", 
+  platform: "SNES", 
+  publisher: "Square", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/a/a7/Chrono_Trigger.jpg", 
+  release_year: 1995, 
+  external_link_1: "https://en.wikipedia.org/wiki/Chrono_Trigger", 
+  external_link_2: "https://www.youtube.com/watch?v=mopVLqSsv54"
+)
+Game.create(
+  title: "Ultimate Mortal Kombat 3", 
+  genre: "Fighting", 
+  description: "Ultimate Mortal Kombat 3 (UMK3) is a fighting video game in the Mortal Kombat series, developed and released by Midway to arcades in 1995. It is an update of 1995's earlier Mortal Kombat 3 with an altered gameplay system, additional characters like the returning favorites Kitana and Scorpion who were missing from Mortal Kombat 3, and some new features.", 
+  platform: "Arcade", 
+  publisher: "Midway", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/f/f9/Ultimate_MK3.png", 
+  release_year: 1995, 
+  external_link_1: "https://en.wikipedia.org/wiki/Ultimate_Mortal_Kombat_3", 
+  external_link_2: "https://www.youtube.com/watch?v=O1KTxPTZKMQ"
+)
+Game.create(
+  title: "Nights Into Dreams", 
+  genre: "Adventure", 
+  description: "Every night, two worlds of human dreams appear, named Nightopia and Nightmare. One day, two teens from Twin Seeds have a terrible day. That night, both of them end up in Nightmare, reliving that bad day, but later they escape into Nightopia. They unravel the Nightmare leader wants to destroy Nightopia and release Nights, who will assist them in their fight.", 
+  platform: "Sega Saturn", 
+  publisher: "Sega", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/3/33/NightsIntoDreamsBox.jpg", 
+  release_year: 1995, 
+  external_link_1: "https://en.wikipedia.org/wiki/Nights_into_Dreams", 
+  external_link_2: "https://www.youtube.com/watch?v=eFxH6-g8FGQ"
+)
+Game.create(
+  title: "X-COM: Terror From the Deep", 
+  genre: "Strategy", 
+  description: "X-COM: Terror From the Deep is a strategy game, the second installment in the X-COM series and a sequel to X-COM: UFO Defense that moves action from the outer space into the Earth’s oceans. The story unexpectedly references to Lovecraft’s novels, as you fight aliens that want to reawaken their unstoppable leader who slept under the sea for hundreds of years.", 
+  platform: "PC", 
+  publisher: "MicroPose", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/b/b9/XCOM_TERROR.jpg", 
+  release_year: 1995, 
+  external_link_1: "https://en.wikipedia.org/wiki/X-COM:_Terror_from_the_Deep", 
+  external_link_2: "https://www.youtube.com/watch?v=hNe3Mx7iFDs"
+)
+
 # 1996
 
 Game.create(
@@ -274,6 +492,80 @@ Game.create(
   external_link_2: "https://youtu.be/lHV7VnWvz_o"
 )
 
+#1997
+
+Game.create(
+  title: "Fallout: A Post Nuclear Role Playing Game", 
+  genre: "RPG", 
+  description: "The game starts in 2161, 84 years after a nuclear war destroyed most of the planet and turned into Wasteland. You can either create your protagonist or play as three pre-set options - Albert Cole, Max Stone or Natalia Dubrovhsky. When in Vault 13 water supplies start to malfunction via technical reasons, Overseer sends protagonist in a quest to find a replacement and save the Vault. Having Pip-Boy and some standard equipment, the Fallout world is absolutely open for exploration.", 
+  platform: "PC/Mac", 
+  publisher: "Interplay Productions", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/a/af/Fallout.jpg", 
+  release_year: 1997, 
+  external_link_1: "https://en.wikipedia.org/wiki/Fallout_(video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=mo39pfUZyWE"
+)
+
+Game.create(
+  title: "Oddworld: Abe's Oddysee", 
+  genre: "Adventure", 
+  description: "The story follows Abe, a slave on the Mudokon meat factory, who suddenly realizes the perspective of being slaughtered in the near future with all of his fellow slaves. Players are offered to take control of Abe on his way to the liberation of the rest of enslaved Mudokons.", 
+  platform: "Playstation/PC", 
+  publisher: "GT Interactive", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/a/ab/Abe%27s_Oddysee_Cover.jpg", 
+  release_year: 1997, 
+  external_link_1: "https://en.wikipedia.org/wiki/Oddworld:_Abe%27s_Oddysee", 
+  external_link_2: "https://www.youtube.com/watch?v=uwZzvIBg6uQ"
+)
+
+Game.create(
+  title: "Final Fantasy VII", 
+  genre: "RPG", 
+  description: "The main character, a mercenary named Cloud Strife, joins the cause of disrupting a megacorporation, which was destroying the planet with its excavations for energy. However, the storyline offers much more beyond that, allowing players to discover the secrets of Midgar, and eventually, save the world.", 
+  platform: "Playstation", 
+  publisher: "Square", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/c/c2/Final_Fantasy_VII_Box_Art.jpg", 
+  release_year: 1997, 
+  external_link_1: "https://en.wikipedia.org/wiki/Final_Fantasy_VII", 
+  external_link_2: "https://www.youtube.com/watch?v=BOUMiEbkZUM"
+)
+
+Game.create(
+  title: "Tomb Raider II", 
+  genre: "Adventure", 
+  description: "Tomb Raider II is an action-adventure video game, part of the Tomb Raider series and the sequel to the 1996 video game Tomb Raider.", 
+  platform: "Playstation/PC", 
+  publisher: "Eidos", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/d/d4/Tomb_Raider_II.png", 
+  release_year: 1997, 
+  external_link_1: "https://en.wikipedia.org/wiki/Tomb_Raider_II", 
+  external_link_2: "https://www.youtube.com/watch?v=otfykctFqBk"
+)
+
+Game.create(
+  title: "Grand Theft Auto", 
+  genre: "Action", 
+  description: "The game takes place in 3 different cities, each one resembling real-life counterparts such as Miami, New York City and San Francisco. The world of the game is only restricted by traveling from one city to another, while the cities themselves are free to explore. The plot is expressed in the form of various missions, where the playable character receives general instructions through a phone call, or otherwise.", 
+  platform: "Playstation/PC", 
+  publisher: "DMA Design", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/e/e7/GTA_-_Box_Front.jpg", 
+  release_year: 1997, 
+  external_link_1: "https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=ahOIJNLLtkI"
+)
+
+Game.create(
+  title: "Tekken 3", 
+  genre: "Fighting", 
+  description: "Tekken 3 is a fighting game, the third installment in the Tekken series. It was released in arcades in March 1997, and for the PlayStation in 1998.", 
+  platform: "Aracde/Playstation", 
+  publisher: "Namco", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/f/f0/T3usposter.jpg", 
+  release_year: 1997, 
+  external_link_1: "https://en.wikipedia.org/wiki/Tekken_3", 
+  external_link_2: "https://www.youtube.com/watch?v=q6SuT4l3Mpg"
+)
+
 # 1998
 
 Game.create(
@@ -341,4 +633,78 @@ Game.create(
   release_year: 1998,
   external_link_1: "https://en.wikipedia.org/wiki/StarCraft_(video_game)",
   external_link_2: "https://youtu.be/borTBiWW1xg"
+)
+
+#1999
+
+Game.create(
+  title: "Half-Life: Opposing Force", 
+  genre: "Action", 
+  description: "Half-Life: Opposing Force is an expansion pack for the original first-person shooter Half-Life. The game setting is the same as the one in the original game: the story takes place in the science laboratory called Black Mesa Research Facility in New Mexico at the same time. However, instead of following the original characters, players are offered to assume the role of Adrien Shephard a Hazardous Environment Combat Unit (initially antagonist organization) operator, who is sent to Black Mesa to prevent an extraterrestrial menace. Nevertheless, shooting scientists is not required, as the main threat comes out of aliens.", 
+  platform: "PC/Mac", 
+  publisher: "Sierra On-Line", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/a/a9/Half-Life_Opposing_Force_box.jpg", 
+  release_year: 1999, 
+  external_link_1: "https://en.wikipedia.org/wiki/Half-Life:_Opposing_Force", 
+  external_link_2: "https://www.youtube.com/watch?v=VEmwml4GJ-E"
+)
+
+Game.create(
+  title: "Crazy Taxi", 
+  genre: "Racing", 
+  description: "Crazy Taxi is the renewed version of arcade machine title of the same name that was released in 1999. It’s a taxi driver simulator. The goal of the game is to deliver passengers to their destinations, performing numerous tricks. The game also features 16 mini-games.", 
+  platform: "Aracde", 
+  publisher: "Sega", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/7/75/CrazyTaxi_cover.png", 
+  release_year: 1999, 
+  external_link_1: "https://en.wikipedia.org/wiki/Crazy_Taxi_(video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=qjIGkv0_dEM"
+)
+
+Game.create(
+  title: "Spyro 2: Ripto's Rage!", 
+  genre: "Adventure", 
+  description: "Things are heating up! Spyro, the feisty, fire-breathing dragon is back and he's ready to take on a whole new adventure in this sequel to the original Spyro! You must save the worlds of Avalar by defeating the dinosaur-riding Ripto and his evil minions.", 
+  platform: "Playstation", 
+  publisher: "Sony Computer Entertainment", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/9/91/Spyro_2_-_Ripto%27s_Rage%21_Coverart.png", 
+  release_year: 1999, 
+  external_link_1: "https://en.wikipedia.org/wiki/Spyro_2:_Ripto%27s_Rage!", 
+  external_link_2: "https://www.youtube.com/watch?v=jvRtE8smD84"
+)
+
+Game.create(
+  title: "Silent Hill", 
+  genre: "Horror", 
+  description: "The game follows Harry Mason as he searches for his missing adopted daughter in the eponymous fictional American town of Silent Hill; stumbling upon a cult conducting a ritual to revive a deity it worships, he discovers her true origin. Five game endings are possible, depending on actions taken by the player, including one joke ending.", 
+  platform: "Playstation", 
+  publisher: "Konami", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/9/96/Silent_Hill_video_game_cover.png", 
+  release_year: 1999, 
+  external_link_1: "https://en.wikipedia.org/wiki/Silent_Hill_(video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=Wy34ChMlvow"
+)
+
+Game.create(
+  title: "Resident Evil 3: Nemesis", 
+  genre: "Horror", 
+  description: "Join Jill Valentine, the heroine and amazing survivor of the notorious disaster at the mansion, as her nightmare continues. The next terrifying drama from the blockbuster Resident Evil Series. This unique adventure intricately reveals more of Umbrella Corporation’s nightmarish plot and picks up just hours before the events from Resident Evil 2.", 
+  platform: "Playstation", 
+  publisher: "Capcom", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/a/a5/Resident_Evil_3_Cover.jpg", 
+  release_year: 1999, 
+  external_link_1: "https://en.wikipedia.org/wiki/Resident_Evil_3:_Nemesis", 
+  external_link_2: "https://www.youtube.com/watch?v=WajTS0JSvOo"
+)
+
+Game.create(
+  title: "Super Smash Bros.", 
+  genre: "Fighting", 
+  description: "The game is a crossover between many different Nintendo franchises, including Mario, The Legend of Zelda, Star Fox, Donkey Kong, Metroid, Mother, F-Zero, Yoshi, Kirby, and Pokémon. It presents a cast of characters and locations from these franchises and allows players to use each character's unique skill sets and even take advantage of the stage's offensive events to inflict damage, recover health, and ultimately attempt to knock opponent characters off the stage.", 
+  platform: "Nintendo 64", 
+  publisher: "Nintendo", 
+  img_url: "https://upload.wikimedia.org/wikipedia/en/4/42/Supersmashbox.jpg", 
+  release_year: 1999, 
+  external_link_1: "https://en.wikipedia.org/wiki/Super_Smash_Bros._(video_game)", 
+  external_link_2: "https://www.youtube.com/watch?v=KNH2silG3As"
 )
