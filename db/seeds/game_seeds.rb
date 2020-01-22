@@ -96,7 +96,7 @@ Game.create(
 )
 Game.create(
   title: "Streets of Rage", 
-  genre: "Action/Arcade", 
+  genre: "Action Arcade", 
   description: "Looting, random violence and destruction are rampant. Nobody is safe. Despite repeated refusals by their superiors, three young police officers were determined to tackle the problem head on. Eventually they created a special attack unit the only way they could – they quit the force. Take control of one of the three ex-officers and make the city a place where people no longer have to walk the Streets of Rage!", 
   platform: "Sega Genesis", 
   publisher: "Sega", 
@@ -107,7 +107,7 @@ Game.create(
 )
 Game.create(
   title: "Street Fighter II: The World Warrior", 
-  genre: "Fighting/Arcade", 
+  genre: "Fighting", 
   description: "Street Fighter II is a fighting game. Players select from one of eight characters: Ryu, Ken, Blanka, E. Honda, Zangief, Chun Li, Guile and Dhalsim to do battle with. They must then use their combat strengths to defeat the other seven fighters followed by four boss characters: M. Bison, Vega, Sagat and Balrog. Each character represents a certain country and has his or her own reasons for wanting to win against the others.", 
   platform: "Arcade", 
   publisher: "Capcom", 
@@ -118,7 +118,7 @@ Game.create(
 )
 Game.create(
   title: "Metroid II - Return of Samus", 
-  genre: "Action/Adventure", 
+  genre: "Action Adventure", 
   description: "Bounty Hunter Samus Aran faces off against the Metroid scourge once again in this epic sequel to the NES  classic, Metroid.", 
   platform: "Game Boy", 
   publisher: "Nintendo", 
@@ -205,7 +205,7 @@ Game.create(
 Game.create(
   title: "Kirby's Dream Land",
   genre: "Action Platformer",
-  description: ,
+  description: "One night, under the cover of darkness, the gluttonous King Dedede and his minions steal all the food in Dream Land as well as the Sparkling Stars used to obtain more food. The next morning as the residents are discussing what to do, Kirby, a young resident of Dream Land, steps forward and volunteers to retrieve the food and stars, and stop Dedede.",
   platform: "Game Boy",
   publisher: "Nintendo",
   img_url: "https://upload.wikimedia.org/wikipedia/en/8/83/Kdl1ussmall.jpg",
@@ -218,7 +218,7 @@ Game.create(
 
 Game.create(
   title: "Doom", 
-  genre: "Shooter", 
+  genre: "First Person Shooter", 
   description: "In Doom, players assume the role of an unnamed space marine, who became popularly known as Doomguy, fighting his way through hordes of invading demons from Hell.", 
   platform: "PC", 
   publisher: "Id Software", 
@@ -358,7 +358,7 @@ Game.create(
 
 Game.create(
   title: "Star Wars - Dark Forces", 
-  genre: "Shooter", 
+  genre: "First Person Shooter", 
   description: "The main protagonist of the game is a mercenary Kyle Katarn, who works for Rebel Alliance. The story takes place when he discovers the Dark Trooper Project of Empire. One of its segments is the development of a series of powerful battle droids and armored stormtroopers.", 
   platform: "PC/Mac", 
   publisher: "Disney Interactive/LucasArts Entertainment", 
@@ -427,7 +427,7 @@ Game.create(
 
 Game.create(
   title: "Resident Evil",
-  genre: "Survival Horror",
+  genre: "Horror",
   description: "The story of the game follows two Special Forces agents through an isolated mansion full of nightmarish enemies, with different puzzles and challenges set upon the player, and an ultimate goal of revealing the mystery of the catastrophe that occurred in Raccoon City.",
   platform: "PlayStation",
   publisher: "Capcom",
@@ -439,7 +439,7 @@ Game.create(
 Game.create(
   title: "Crash Bandicoot",
   genre: "Platformer",
-  description: ,
+  description: "The first installment in the Crash Bandicoot series, chronicling the creation of the title character at the hands of series antagonist Doctor Neo Cortex and henchman Doctor Nitrus Brio. The story follows Crash as he aims to prevent Brio and Cortex's plans for world domination, and rescue his girlfriend Tawna, a female bandicoot also evolved by Brio and Cortex.",
   platform: "PlayStation",
   publisher: "Sony Computer Entertainment",
   img_url: "https://upload.wikimedia.org/wikipedia/en/4/44/Crash_Bandicoot_Cover.png",
@@ -613,7 +613,7 @@ Game.create(
   external_link_2: "https://youtu.be/WpG9XIfFkE0"
 )
 Game.create(
-  title: "Banjo-Kazooie"
+  title: "Banjo-Kazooie",
   genre: "Action Adventure Platformer",
   description: "The first game in the Banjo-Kazooie series. It follows the story of a bear, Banjo, and a bird, Kazooie, as they try to stop the plans of the witch Gruntilda, who intends to steal the beauty of Banjo's younger sister, Tooty, for herself.",
   platform: "Nintendo 64",
