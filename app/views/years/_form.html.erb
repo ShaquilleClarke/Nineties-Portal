@@ -1,1 +1,55 @@
 <h1>This is a test! Yay for the year <%= @year %>!</h1>
+
+<h3>Top Box Office Hits from <%= @year %>!</h3>
+<div>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li><img src="<%=movie.img_url%>" </li>
+      <li>Title: <%= movie.title %></li>
+      <li>Genres: <%= movie.genre %></li>
+      <li>Box Office: <%= movie.box_office %></li>
+      <li>Description: <%= movie.description %></li>
+      <li><a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a></li>
+      <li><a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a></li>
+      <br><br>
+    <% end %>
+  </ul>
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Chart Toppers of <%= @year %>!</h3>
+<div>
+  <ul>
+    <% @songs.each do |song| %>
+      <li><img src="<%=song.img_url%>" </li>
+      <li>Title: <%= song.title %></li>
+      <li>Artist: <%= song.artist %></li>
+      <li>Genre: <%= song.genre %></li>
+      <li><a href="<%= song.external_link_1 %>">Learn more about <%=song.title%> on Wikipedia</a></li>
+      <li><a href="<%= song.external_link_2 %>">Watch the music video for <%=song.title%> on YouTube</a></li>
+    <% end %>
+  </ul>
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Hottest Video Games of <%= @year %></h3>
+<div>
+  <ul>
+    <% @games.each do |game| %>
+      <li><img src="<%=game.img_url%>" </li>
+      <li>Title: <%= game.title %></li>
+      <li>Genre: <%= game.genre %></li>
+      <li>Platform: <%= game.platform %></li>
+      <li>Publisher: <%= game.publisher %></li>
+      <li>Description: <%= game.description %></li>
+      <li><a href="<%= game.external_link_1 %>">Learn more about <%=game.title%> on Wikipedia</a></li>
+      <li><a href="<%= game.external_link_2 %>">Watch gameplay of <%=game.title%> on YouTube</a></li>
+    <% end %>
+  </ul>
+</div>
