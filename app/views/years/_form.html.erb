@@ -1,6 +1,6 @@
-<h1>This is a test! Yay for the year <%= @year %>!</h1>
+<h1>Welcome to the year <%= @year %>!</h1>
 
-<h3>Top Box Office Hits from <%= @year %>!</h3>
+<h2>Top Box Office Hits from <%= @year %>:</h2>
 <div>
   <ul>
     <% @movies.each do |movie| %>
@@ -20,7 +20,7 @@
 <hr>
 <br>
 
-<h3>Chart Toppers of <%= @year %>!</h3>
+<h2>Chart Toppers of <%= @year %>:</h2>
 <div>
   <ul>
     <% @songs.each do |song| %>
@@ -38,7 +38,7 @@
 <hr>
 <br>
 
-<h3>Hottest Video Games of <%= @year %></h3>
+<h2>Hottest Video Games of <%= @year %>:</h2>
 <div>
   <ul>
     <% @games.each do |game| %>

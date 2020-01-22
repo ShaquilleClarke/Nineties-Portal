@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  root 'application#home'
+  root 'application#home', as: 'home'
 
   get '/1990', to: 'years#y_1990'
   get '/1991', to: 'years#y_1991'
@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   get '/1997', to: 'years#y_1997'
   get '/1998', to: 'years#y_1998'
   get '/1999', to: 'years#y_1999'
+
+  resources :users, only: [:show, :new, :create]
+  resources :user_favorites, only: [:create]
 
 end

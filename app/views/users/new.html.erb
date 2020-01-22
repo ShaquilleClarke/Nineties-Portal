@@ -1,0 +1,15 @@
+<h1>Create an Account</h1>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |message| %>
+    <h2><%= message %></h2>
+  <% end %>
+<% end %>
+
+<%= form_for @user do |f| %>
+  <%= f.label "Enter a username:" %>
+  <%= f.text_field :username %>
+  <%= f.submit value: "Create User" %>
+<% end %>
+
+</div>
