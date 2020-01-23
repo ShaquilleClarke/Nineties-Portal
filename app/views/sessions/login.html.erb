@@ -4,10 +4,16 @@
   <% end %>
 <% end %>
 
-<h1>Log In</h1>
+<div class="enter-info-page">
 
-<%= form_for :session, url: logging_in_path do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.submit value: 'Log In' %>
-<% end %>
+  <h1>Log In</h1>
+
+  <div class="enter-info-form">
+  <%= form_for :session, url: logging_in_path do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.submit value: 'Log In' %>
+  <% end %>
+  </div>
+
+</div>

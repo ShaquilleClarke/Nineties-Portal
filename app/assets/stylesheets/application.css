@@ -160,8 +160,9 @@
   font-size: 35px;
 }
 
+.enter-info-page {
+}
 .enter-info-form {
-  text-align: center;
   text-shadow: 2px 2px white;
   width: 400px;
   border-radius: 25px;
@@ -173,6 +174,7 @@
 
 .home-page-welcome {
   text-align: center;
+
 }
 
 h1 {
