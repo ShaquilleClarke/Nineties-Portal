@@ -1,4 +1,4 @@
-<h1>Welcome to the year <%= @year %>!</h1>
+<h1 class="year-header">Welcome to the year <%= @year %>!</h1>
 
 <% if flash[:errors] %>
   <% flash[:errors].each do |message| %>
@@ -6,11 +6,11 @@
   <% end %>
 <% end %>
 
-<h2>Top Box Office Hits from <%= @year %>:</h2>
+<h2 class="subject-header">Top Box Office Hits from <%= @year %>:</h2>
 <div class="index-container">
   <% @movies.each do |movie| %>
   <div class="index-tile">
-      <img src="<%=movie.img_url%>">
+      <img class="movie-img" src="<%=movie.img_url%>">
       <p>Title: <%= movie.title %></p>
       <p>Genre: <%= movie.genre %></p>
       <p>Box Office: <%= movie.box_office %></p>
@@ -31,7 +31,7 @@
 <hr>
 <br>
 
-<h2>Chart Toppers of <%= @year %>:</h2>
+<h2 class="subject-header">Chart Toppers of <%= @year %>:</h2>
 <div class="index-container">
   <% @songs.each do |song| %>
   <div class="index-tile">
@@ -55,7 +55,7 @@
 <hr>
 <br>
 
-<h2>Hottest Video Games of <%= @year %>:</h2>
+<h2 class="subject-header">Hottest Video Games of <%= @year %>:</h2>
 <div class="index-container">
   <% @games.each do |game| %>
   <div class="index-tile">

@@ -16,8 +16,10 @@
 
   body {
 
-  background-color: #B18ED1;
+  /* background-color: #B18ED1; */
 
+  background-image: url("90s_cup_pattern_tiled.jpg");
+  background-size: ;
   margin: 0;
   font-family: 'Comic Sans MS', Helvetica, sans-serif;
 }
@@ -116,6 +118,10 @@
   display: block;
 }
 
+
+
+
+
 /* testing stuff */
 
 .index-container {
@@ -132,10 +138,47 @@
 }
 
 .index-tile {
-  max-width: 200px;
+  max-width: 320px;
   border-radius: 25px;
   padding: 20px;
   margin: 3px;
   // background-color: lightgrey;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-img {
+  align-content: center;
+}
+
+.year-header {
+  text-align: center;
+  font-size: 50px;
+}
+
+.subject-header {
+  text-align: center;
+  font-size: 35px;
+}
+
+.enter-info-form {
+  text-align: center;
+  text-shadow: 2px 2px white;
+  width: 400px;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 3px;
+  // background-color: lightgrey;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.home-page-welcome {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 2px 2px white;
+}
+
+h2 {
+  text-shadow: 2px 2px white;
 }

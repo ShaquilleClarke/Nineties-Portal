@@ -6,11 +6,13 @@
   <% end %>
 <% end %>
 
+<div class="enter-info-form">
 <%= form_for @user do |f| %>
   <%= f.label "Enter a username:" %>
   <%= f.text_field :username %>
   <%= f.submit value: "Create Account" %>
 <% end %>
+</div>
 
 <br>
 
