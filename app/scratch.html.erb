@@ -1,0 +1,16 @@
+<div class="index-container">
+  <ul>
+    <% @movies.each do |movie| %>
+    <div class="index-tile">
+      <li><img src="<%=movie.img_url%>" </li>
+      <li>Title: <%= movie.title %></li>
+      <li>Genres: <%= movie.genre %></li>
+      <li>Box Office: <%= movie.box_office %></li>
+      <li>Description: <%= movie.description %></li>
+      <li><a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a></li>
+      <li><a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a></li>
+      <br><br>
+    </div>
+    <% end %>
+  </ul>
+</div>

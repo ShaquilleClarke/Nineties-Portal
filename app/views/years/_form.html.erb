@@ -1,19 +1,30 @@
 <h1>Welcome to the year <%= @year %>!</h1>
 
+<% if flash[:errors] %>
+  <% flash[:errors].each do |message| %>
+    <h2><%= message %></h2>
+  <% end %>
+<% end %>
+
 <h2>Top Box Office Hits from <%= @year %>:</h2>
-<div>
-  <ul>
-    <% @movies.each do |movie| %>
-      <li><img src="<%=movie.img_url%>" </li>
-      <li>Title: <%= movie.title %></li>
-      <li>Genres: <%= movie.genre %></li>
-      <li>Box Office: <%= movie.box_office %></li>
-      <li>Description: <%= movie.description %></li>
-      <li><a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a></li>
-      <li><a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a></li>
-      <br><br>
+<div class="index-container">
+  <% @movies.each do |movie| %>
+  <div class="index-tile">
+      <img src="<%=movie.img_url%>">
+      <p>Title: <%= movie.title %></p>
+      <p>Genre: <%= movie.genre %></p>
+      <p>Box Office: <%= movie.box_office %></p>
+      <p>Description: <%= movie.description %></p>
+      <a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a><br>
+      <a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a>
+      <% if @logged_in_user %>
+        <%= form_for :user_favorite, url: add_to_favorites_path do |f| %>
+          <%= f.hidden_field :movie_id, value: movie.id %>
+          <%= f.submit value: "Add to Favorites" %>
+        <% end %>
+      <% end %>
+    </div>
     <% end %>
-  </ul>
 </div>
 
 <br>
@@ -21,17 +32,23 @@
 <br>
 
 <h2>Chart Toppers of <%= @year %>:</h2>
-<div>
-  <ul>
-    <% @songs.each do |song| %>
-      <li><img src="<%=song.img_url%>" </li>
-      <li>Title: <%= song.title %></li>
-      <li>Artist: <%= song.artist %></li>
-      <li>Genre: <%= song.genre %></li>
-      <li><a href="<%= song.external_link_1 %>">Learn more about <%=song.title%> on Wikipedia</a></li>
-      <li><a href="<%= song.external_link_2 %>">Watch the music video for <%=song.title%> on YouTube</a></li>
+<div class="index-container">
+  <% @songs.each do |song| %>
+  <div class="index-tile">
+    <img src="<%=song.img_url%>">
+    <p>Title: <%= song.title %></p>
+    <p>Artist: <%= song.artist %></p>
+    <p>Genre: <%= song.genre %></p>
+    <a href="<%= song.external_link_1 %>">Learn more about <%=song.title%> on Wikipedia</a>
+    <a href="<%= song.external_link_2 %>">Watch the music video for <%=song.title%> on YouTube</a>
+    <% if @logged_in_user %>
+      <%= form_for :user_favorite, url: add_to_favorites_path do |f| %>
+        <%= f.hidden_field :song_id, value: song.id %>
+        <%= f.submit value: "Add to Favorites" %>
+      <% end %>
     <% end %>
-  </ul>
+    </div>
+  <% end %>
 </div>
 
 <br>
@@ -39,17 +56,23 @@
 <br>
 
 <h2>Hottest Video Games of <%= @year %>:</h2>
-<div>
-  <ul>
-    <% @games.each do |game| %>
-      <li><img src="<%=game.img_url%>" </li>
-      <li>Title: <%= game.title %></li>
-      <li>Genre: <%= game.genre %></li>
-      <li>Platform: <%= game.platform %></li>
-      <li>Publisher: <%= game.publisher %></li>
-      <li>Description: <%= game.description %></li>
-      <li><a href="<%= game.external_link_1 %>">Learn more about <%=game.title%> on Wikipedia</a></li>
-      <li><a href="<%= game.external_link_2 %>">Watch gameplay of <%=game.title%> on YouTube</a></li>
+<div class="index-container">
+  <% @games.each do |game| %>
+  <div class="index-tile">
+    <img src="<%=game.img_url%>">
+    <p>Title: <%= game.title %></p>
+    <p>Genre: <%= game.genre %></p>
+    <p>Platform: <%= game.platform %></p>
+    <p>Publisher: <%= game.publisher %></p>
+    <p>Description: <%= game.description %></p>
+    <a href="<%= game.external_link_1 %>">Learn more about <%=game.title%> on Wikipedia</a>
+    <a href="<%= game.external_link_2 %>">Watch gameplay of <%=game.title%> on YouTube</a>
+    <% if @logged_in_user %>
+      <%= form_for :user_favorite, url: add_to_favorites_path do |f| %>
+        <%= f.hidden_field :game_id, value: game.id %>
+        <%= f.submit value: "Add to Favorites" %>
+      <% end %>
     <% end %>
-  </ul>
+  </div>
+  <% end %>
 </div>

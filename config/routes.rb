@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  # home/about pages
+
   root 'application#home', as: 'home'
+  get '/about', to: 'application#about', as: 'about'
+
+  # years
 
   get '/1990', to: 'years#y_1990'
   get '/1991', to: 'years#y_1991'
@@ -14,7 +19,22 @@ Rails.application.routes.draw do
   get '/1998', to: 'years#y_1998'
   get '/1999', to: 'years#y_1999'
 
-  resources :users, only: [:show, :new, :create]
-  resources :user_favorites, only: [:create]
+  # login stuff
+
+  get '/login', to: 'sessions#login', as: 'login'
+  post '/login', to: 'sessions#logging_in', as: 'logging_in'
+  delete '/', to: 'sessions#log_out', as: "log_out"
+
+  # users
+
+  resources :users, only: [:create]
+  get '/favorites', to: 'users#favorites', as: 'favorites'
+  get '/create_account', to: 'users#create_account', as: 'create_account'
+
+  # user favorites
+
+  post '/favorites', to: 'user_favorites#add_to_favorites', as: 'add_to_favorites'
+  delete '/user_favorite', to: 'user_favorites#remove_from_favorites', as: 'remove_from_favorites'
+  
 
 end

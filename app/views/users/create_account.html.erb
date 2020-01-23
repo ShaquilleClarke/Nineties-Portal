@@ -9,7 +9,11 @@
 <%= form_for @user do |f| %>
   <%= f.label "Enter a username:" %>
   <%= f.text_field :username %>
-  <%= f.submit value: "Create User" %>
+  <%= f.submit value: "Create Account" %>
 <% end %>
+
+<br>
+
+<h2>Already have an account? <%= link_to 'Click here to log in!', login_path %></h2>
 
 </div>

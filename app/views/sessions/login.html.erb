@@ -1,0 +1,13 @@
+<% if flash[:errors] %>
+  <% flash[:errors].each do |message| %>
+    <h2><%= message %></h2>
+  <% end %>
+<% end %>
+
+<h1>Log In</h1>
+
+<%= form_for :session, url: logging_in_path do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit value: 'Log In' %>
+<% end %>

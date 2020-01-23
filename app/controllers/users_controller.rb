@@ -1,16 +1,17 @@
 class UsersController < ApplicationController
 
-  def show
-    @user = params[:id]
-
-    # user_favorites = UserFavorite.where(user_id: @user.id)
-
-    # @user_movies = UserFavorite.where(user_id: @user.id, movie_id: !nil)
-    # @user_songs
-    # @user_games
+  def favorites #favorites page
+    if @logged_in_user
+      @favorite_movies = @logged_in_user.movies 
+      @favorite_songs = @logged_in_user.songs 
+      @favorite_games = @logged_in_user.games 
+    else
+      flash[:errors] = ["You must be logged in to view your favorites page. Create an account?"]
+      redirect_to create_account_path
+    end
   end
 
-  def new
+  def create_account
     @user = User.new
   end
 
@@ -18,6 +19,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
 
     if @user.valid?
+      session[:user_id] = @user.id
       redirect_to home_path
     else
       flash[:errors] = @user.errors.full_messages
