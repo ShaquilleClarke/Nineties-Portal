@@ -70,39 +70,3 @@ class UserFavoritesController < ApplicationController
       end
 
 end
-
-
-  # def add_to_favorites
-  #   @found_flag = 0
-  #   check_if_favorite(user_favorite_params)
-  #   if @found_flag == 0
-  #     @user_favorite = UserFavorite.create(user_id: session[:user_id])
-  #     @user_favorite.update(user_favorite_params)
-  #     redirect_to request.referrer
-  #   elsif @found_flag == 1
-  #     @found_flag = 0
-  #     flash[:errors] = ["This item is already in your favorites"]
-  #     redirect_to request.referrer
-  #   end
-  # end
-
-      # def check_movie(params)
-      #   @found = UserFavorite.find_by(user_id: session[:user_id], movie_id: params[:movie_id])
-      #   unless @found == nil
-      #     @found_flag = 1
-      #   end
-      # end
-
-      # def check_song(params)
-      #   @found = UserFavorite.find_by(user_id: session[:user_id], song_id: params[:song_id])
-      #   unless @found == nil
-      #     @found_flag = 1
-      #   end
-      # end
-
-      # def check_game(params)
-      #   @found = UserFavorite.find_by(user_id: session[:user_id], game_id: params[:game_id])
-      #   unless @found == nil
-      #     @found_flag = 1
-      #   end
-      # end

@@ -1,5 +1,9 @@
 class YearsController < ApplicationController
 
+  def years
+    
+  end
+
   def y_1990
     year_info_find(1990)
   end

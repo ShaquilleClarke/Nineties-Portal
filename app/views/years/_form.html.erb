@@ -10,13 +10,15 @@
 <div class="index-container">
   <% @movies.each do |movie| %>
   <div class="index-tile">
-      <img class="movie-img" src="<%=movie.img_url%>">
-      <p>Title: <%= movie.title %></p>
-      <p>Genre: <%= movie.genre %></p>
-      <p>Box Office: <%= movie.box_office %></p>
-      <p>Description: <%= movie.description %></p>
-      <a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a><br>
+      <a href="<%= movie.external_link_1 %>"><img class="movie-img" src="<%=movie.img_url%>"></a>
+      <p><em>Title:</em> <%= movie.title %></p>
+      <p><em>Genre:</em> <%= movie.genre %></p>
+      <p><em>Box Office:</em> <%= movie.box_office %></p>
+      <p><em>Description:</em></p> <p><%= movie.description %></p>
+      <a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a>
+      <br><br>
       <a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a>
+      <br><br>
       <% if @logged_in_user %>
         <%= form_for :user_favorite, url: add_to_favorites_path do |f| %>
           <%= f.hidden_field :movie_id, value: movie.id %>
@@ -35,12 +37,14 @@
 <div class="index-container">
   <% @songs.each do |song| %>
   <div class="index-tile">
-    <img src="<%=song.img_url%>">
-    <p>Title: <%= song.title %></p>
-    <p>Artist: <%= song.artist %></p>
-    <p>Genre: <%= song.genre %></p>
+    <a href="<%= song.external_link_1 %>"><img src="<%=song.img_url%>"></a>
+    <p><em>Title:</em> <%= song.title %></p>
+    <p><em>Artist:</em> <%= song.artist %></p>
+    <p><em>Genre:</em> <%= song.genre %></p>
     <a href="<%= song.external_link_1 %>">Learn more about <%=song.title%> on Wikipedia</a>
+    <br><br>
     <a href="<%= song.external_link_2 %>">Watch the music video for <%=song.title%> on YouTube</a>
+    <br><br>
     <% if @logged_in_user %>
       <%= form_for :user_favorite, url: add_to_favorites_path do |f| %>
         <%= f.hidden_field :song_id, value: song.id %>
@@ -59,14 +63,16 @@
 <div class="index-container">
   <% @games.each do |game| %>
   <div class="index-tile">
-    <img src="<%=game.img_url%>">
-    <p>Title: <%= game.title %></p>
-    <p>Genre: <%= game.genre %></p>
-    <p>Platform: <%= game.platform %></p>
-    <p>Publisher: <%= game.publisher %></p>
-    <p>Description: <%= game.description %></p>
+    <a href="<%= game.external_link_1 %>"><img src="<%=game.img_url%>"></a>
+    <p><em>Title:</em> <%= game.title %></p>
+    <p><em>Genre:</em> <%= game.genre %></p>
+    <p><em>Platform:</em> <%= game.platform %></p>
+    <p><em>Publisher:</em> <%= game.publisher %></p>
+    <p><em>Description:</em></p> <p><%= game.description %></p>
     <a href="<%= game.external_link_1 %>">Learn more about <%=game.title%> on Wikipedia</a>
+    <br><br>
     <a href="<%= game.external_link_2 %>">Watch gameplay of <%=game.title%> on YouTube</a>
+    <br><br>
     <% if @logged_in_user %>
       <%= form_for :user_favorite, url: add_to_favorites_path do |f| %>
         <%= f.hidden_field :game_id, value: game.id %>

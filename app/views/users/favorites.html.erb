@@ -1,17 +1,19 @@
-<h1><%= @logged_in_user.username %>'s favorite 90s stuff</h1>
+<h1 class="year-header"><%= @logged_in_user.username %>'s favorite 90s stuff</h1>
 
-<h2>Favorite 90s Movies:</h2>
+<h2 class="subject-header">Favorite 90s Movies:</h2>
 
 <div class="index-container">
   <% @favorite_movies.each do |movie| %>
   <div class="index-tile">
-    <img src="<%=movie.img_url%>">
-    <p>Title: <%= movie.title %></p>
-    <p>Genre: <%= movie.genre %></p>
-    <p>Box Office: <%= movie.box_office %></p>
-    <p>Description: <%= movie.description %></p>
-    <a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a><br>
-    <a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a>
+    <a href="<%= movie.external_link_1 %>"><img class="movie-img" src="<%=movie.img_url%>"></a>
+      <p><em>Title:</em> <%= movie.title %></p>
+      <p><em>Genre:</em> <%= movie.genre %></p>
+      <p><em>Box Office:</em> <%= movie.box_office %></p>
+      <p><em>Description:</em> <%= movie.description %></p>
+      <a href="<%= movie.external_link_1 %>">Learn more about <%=movie.title%> on Wikipedia</a>
+      <br><br>
+      <a href="<%= movie.external_link_2 %>">Watch the trailer for <%=movie.title%> on YouTube</a>
+      <br><br>
     <%= form_for :user_favorite, url: remove_from_favorites_path, method: :delete do |f| %>
       <%= f.hidden_field :movie_id, value: movie.id %>
       <%= f.submit value: "Remove from Favorites" %>
@@ -20,17 +22,19 @@
   <% end %>
 </div>
 
-<h2>Favorite 90s Songs:</h2>
+<h2 class="subject-header">Favorite 90s Songs:</h2>
 
 <div class="index-container">
   <% @favorite_songs.each do |song| %>
   <div class="index-tile">
-    <img src="<%=song.img_url%>">
-    <p>Title: <%= song.title %></p>
-    <p>Artist: <%= song.artist %></p>
-    <p>Genre: <%= song.genre %></p>
+    <a href="<%= song.external_link_1 %>"><img src="<%=song.img_url%>"></a>
+    <p><em>Title:</em> <%= song.title %></p>
+    <p><em>Artist:</em> <%= song.artist %></p>
+    <p><em>Genre:</em> <%= song.genre %></p>
     <a href="<%= song.external_link_1 %>">Learn more about <%=song.title%> on Wikipedia</a>
+    <br><br>
     <a href="<%= song.external_link_2 %>">Watch the music video for <%=song.title%> on YouTube</a>
+    <br><br>
     <%= form_for :user_favorite, url: remove_from_favorites_path, method: :delete do |f| %>
       <%= f.hidden_field :song_id, value: song.id %>
       <%= f.submit value: "Remove from Favorites" %>
@@ -39,19 +43,21 @@
   <% end %>
 </div>
 
-<h2>Favorite 90s Games:</h2>
+<h2 class="subject-header">Favorite 90s Games:</h2>
 
 <div class="index-container">
   <% @favorite_games.each do |game| %>
   <div class="index-tile">
-    <img src="<%=game.img_url%>">
-    <p>Title: <%= game.title %></p>
-    <p>Genre: <%= game.genre %></p>
-    <p>Platform: <%= game.platform %></p>
-    <p>Publisher: <%= game.publisher %></p>
-    <p>Description: <%= game.description %></p>
+    <a href="<%= game.external_link_1 %>"><img src="<%=game.img_url%>"></a>
+    <p><em>Title:</em> <%= game.title %></p>
+    <p><em>Genre:</em> <%= game.genre %></p>
+    <p><em>Platform:</em> <%= game.platform %></p>
+    <p><em>Publisher:</em> <%= game.publisher %></p>
+    <p><em>Description:</em> <%= game.description %></p>
     <a href="<%= game.external_link_1 %>">Learn more about <%=game.title%> on Wikipedia</a>
+    <br><br>
     <a href="<%= game.external_link_2 %>">Watch gameplay of <%=game.title%> on YouTube</a>
+    <br><br>
     <%= form_for :user_favorite, url: remove_from_favorites_path, method: :delete do |f| %>
       <%= f.hidden_field :game_id, value: game.id %>
       <%= f.submit value: "Remove from Favorites" %>

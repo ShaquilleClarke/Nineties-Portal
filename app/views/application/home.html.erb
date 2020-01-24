@@ -1,1 +1,19 @@
-<h1 class="home-page-welcome">Welcome to the 90s!</h1>
+<% if @logged_in_user %>
+  <h1 class="home-page-welcome">Welcome to the 90s, <%= @logged_in_user.username %>!</h1>
+<% else %>
+  <h1 class="home-page-welcome">Welcome to the 90s!</h1>
+<% end %>
+
+<div class="home-page-container">
+  <div class="home-page-blurb">
+    <p>Do you often find yourself pining away for the "good old days"?</p>
+    
+    <p>Do you miss the warm, comforting glow of a CRT television screen?</p>
+    
+    <p>Do you think video games peaked in the 16 and 32-bit eras?</p>
+    
+    <p>If so, you've come to the right place.</p>
+
+    <p>Click on "Years" on the navigation bar at the top of the page to get started. 🤙</p>
+  </div>
+</div>

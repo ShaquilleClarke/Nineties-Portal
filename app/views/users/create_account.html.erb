@@ -1,3 +1,5 @@
+<div class="enter-info-page">
+
 <h1>Create an Account</h1>
 
 <% if flash[:errors] %>
@@ -6,8 +8,6 @@
   <% end %>
 <% end %>
 
-<div class="enter-info-page">
-
   <div class="enter-info-form">
   <%= form_for @user do |f| %>
     <%= f.label "Enter a username:" %>
@@ -15,10 +15,6 @@
     <%= f.submit value: "Create Account" %>
   <% end %>
   </div>
-
-</div>
-
-<br>
 
 <h2>Already have an account? <%= link_to 'Click here to log in!', login_path %></h2>
 

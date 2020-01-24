@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   # years
 
+  get '/years', to: 'years#years', as: 'years'
+
   get '/1990', to: 'years#y_1990'
   get '/1991', to: 'years#y_1991'
   get '/1992', to: 'years#y_1992'
