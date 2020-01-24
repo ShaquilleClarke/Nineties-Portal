@@ -25,8 +25,33 @@
 }
 
 .topnav {
+  /* position: fixed; 
+  top: 0; 
+  width: 100%; */
   overflow: hidden;
-  background-color: #179EB7;
+  /* background-color: #179EB7; */
+  background: linear-gradient(200deg, #E500F2, #00DCF3, #B400C6);
+  background-size: 100% 1300%;
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+  border-bottom: 1px solid black;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
 }
 
 .topnav a {
@@ -263,3 +288,44 @@ li:before {
   margin-left: -35px;
   margin-right: 10px;
   }
+
+  .right {
+    float: right;
+    padding-right: 200px;
+    padding-top: 10px;
+    margin: 0px;
+    color: #f2f2f2;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+
+.go-add-favorites {
+  /* text-align: center; */
+
+  font-size: 40px;
+  margin-top: 170px;
+  text-align: center;
+  animation-name: spin1,depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes spin1 {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+/* @keyframes spin2 {
+  from { transform: rotateY(-90deg); }
+  to { transform: rotateY(0deg); }
+} */
+
+@keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}

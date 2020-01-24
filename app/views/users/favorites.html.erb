@@ -1,5 +1,9 @@
 <h1 class="year-header"><%= @logged_in_user.username %>'s favorite 90s stuff</h1>
 
+<% unless @logged_in_user.has_any_favorites? %>
+  <h1 class="go-add-favorites">Stop trippin', go add some favorites fool</h1>
+<% else %>
+
 <h2 class="subject-header">Favorite 90s Movies:</h2>
 
 <div class="index-container">
@@ -65,3 +69,6 @@
   </div>
   <% end %>
 </div>
+<br><br>
+
+<% end %>

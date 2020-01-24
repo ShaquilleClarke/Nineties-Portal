@@ -12,6 +12,8 @@
 
   <body>
 
+    <% greetings = ["Sup", "Hang tight", "Keep it rad", "Booyah", "You da bomb", "WAZZUUUUUUP", "Don't touch that dial", "You've got mail", "It wasn't me", "Totally tubuluar", "Gnarly", "Bodacious", "Keep it real", "Don't have a cow", "Eat my shorts", "No Duh", "Take a chill pill", "Let's bounce", "Oh snap", "Bling bling", "What's the 411", "Talk to the hand", "I'm totally buggin'", "All that and a bag of chips", "Cowabunga", "Radical", "As if", "Let's kick it", "Who's your daddy", "Don't be a buster"] %>
+
     <div class="topnav">
     <a href="/">Home</a>
     <div class="dropdown">
@@ -34,12 +36,14 @@
     <a href="/favorites">Favorites</a>
     <% if @logged_in_user %>
       <%= link_to 'Log Out', log_out_path, method: 'delete' %>
+      <p class="right"><%= greetings.sample %>, <%= @logged_in_user.username %></p>
     <% else %>
       <a href="/login">Log In</a>
       <a href="/create_account">Create Account</a>
     <% end %>
     </div>
-
+    
+    
     <%= yield %>
 
   </body>
