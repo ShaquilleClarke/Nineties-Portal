@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       redirect_to home_path
     else
       flash[:errors] = @user.errors.full_messages
-      redirect_to new_user_path
+      redirect_to create_account_path
     end
   end
 

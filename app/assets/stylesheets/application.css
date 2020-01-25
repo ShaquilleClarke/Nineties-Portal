@@ -25,10 +25,10 @@
 }
 
 .topnav {
-  /* position: fixed; 
+  position: fixed; 
   top: 0; 
-  width: 100%; */
-  overflow: hidden;
+  width: 100%;
+  /* overflow: hidden; */
   /* background-color: #179EB7; */
   background: linear-gradient(200deg, #E500F2, #00DCF3, #B400C6);
   background-size: 100% 1300%;
